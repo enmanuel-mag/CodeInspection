@@ -1,11 +1,21 @@
 package labcodeinspection;
-
 import java.util.Scanner;
-
 public class EmailApp {
 	
-	private EmailApp() {}
-
+	/**
+	* 
+	*Cosntructor privado
+	* @author
+	*/
+	 private EmailApp() {
+	        throw new UnsupportedOperationException();
+	    }
+	 
+	 /**
+	 * clase de email
+     * @param args
+	 */
+	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
@@ -25,4 +35,5 @@ public class EmailApp {
 		email.generateEmail();
 		email.showInfo();
 	}
+	
 }
